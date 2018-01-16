@@ -9,4 +9,4 @@ The frontend was designed using HTML, CSS, and Bootstrap, while the backend was 
 
 The project code is available on GitHub as a Django app. All settings, URL management, and deployment files are not available here.
 
-Check it out at: [http://findaflight.herokuapp.com/]()
+Check it out at: [http://findaflight.herokuapp.com/](http://findaflight.herokuapp.com/)
