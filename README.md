@@ -1,5 +1,5 @@
 # Flight Finder
-![Flight Finder home page](https://tyj144.github.io/img/flight_finder_home.png)
+![Flight Finder home page](https://tyj144.github.io/img/flight-finder-home.png)
 ## Info
 **Flight Finder** is a web app that helps users discover new places by generating a new vacation destination for them. The app will then find flight tickets and provide location information for them using the Wikipedia API.
 
