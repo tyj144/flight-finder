@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+{% block style %}
+{% endblock %}
+{% block header %}
+    <img src="{% static 'img/paper-plane.png' %}" alt="paper-plane" height="150" id="logo"></img>
+    <h1 id="heading"><a href="/">Flight Finder</a></h1>
+    <span id="subtitle">Start a new journey.</span>
+{% endblock %}
+
+{% block content %}
+
+
+{% if flight_not_found %}
+<div id="not_found">Flight not found.</div>
+{% else %}
+{% endif %}
+<div id="prompt" class="block">
+	<p style="font-size:24pt">Where will you begin?</p>
+
+	<form method="post">{% csrf_token %}
+		{{ form.as_p }}
+		{{ form.media }}
+		<button type="submit" id="submit"><i class="fa fa-plane" aria-hidden="true"></i>
+Takeoff</button>
+	</form>
+</div>
+{% endblock %}

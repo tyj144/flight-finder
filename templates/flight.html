@@ -1,0 +1,63 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+{% block header %}
+<a href="/"><img src="{% static 'img/paper-plane.png' %}" alt="paper-plane" height="100" id="logo"></img></a>
+{% endblock %}
+{% block content %}
+	{% if start_loc and start_date and end_date %}
+	<div id="destination" class="block">
+		<p>Your destination is...</p>
+		<h1 id="heading">{{ arrival_name }}</h1>
+		<img src="{{ img_url }}" width="300"></img>
+		<p>{{ summary }}</p>
+	</div>
+	<div id="trip-info" class="block">
+		<h1>Trip from {{ depart_name }} ({{ start_loc }}) to {{ arrival_name }} ({{ arrival.0 }})</h1>
+		<p>{{ start_date }} to {{ end_date }}</p>
+
+		<div class="flight">
+			<h2>Departure Flight</h2>
+			<div class="ticket">
+			<p id="jetblue">jetBlue</p>
+			<table class="table">
+				<tr class="top-row">
+					<th>From</th>
+					<th>To</th>
+					<th>Date</th>
+					<th>Cost</th>
+				</tr>
+				<tr>
+					<td>{{ depart.0 }}</td>
+					<td>{{ depart.1 }}</td>
+					<td>{{ depart.2 }}</td>
+					<td>${{ depart.3 }}</td>
+				</tr>
+			</table>
+		</div>
+		</div>
+		<div class="flight">
+			<h2>Arrival Flight</h2>
+			<div class="ticket">
+			<p id="jetblue">jetBlue</p>
+			<table class="table">
+				<tr class="top-row">
+					<th>From</th>
+					<th>To</th>
+					<th>Date</th>
+					<th>Cost</th>
+				</tr>
+				<tr>
+					<td>{{ arrival.0 }}</td>
+					<td>{{ arrival.1 }}</td>
+					<td>{{ arrival.2 }}</td>
+					<td>${{ arrival.3 }}</td>
+				</tr>
+			</table>
+			</div>	
+		</div>
+	</div>
+	{% else %}
+	<h1>No trip was found.</h1>
+	{% endif %}
+</div>
+{% endblock %}

@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans:300,400|Lobster:400|Montserrat:500,600|Inconsolata:400');
+
+body {
+	font-family: "Josefin Sans", sans-serif;
+	font-weight: 300;
+}
+
+header {
+	padding: 1em;
+	margin: 0 auto;
+	max-width: 50em;
+	text-align: center;
+	padding-bottom: 2em;
+}
+
+h1#heading {
+	font-family: "Lobster", "Arial", sans-serif;
+	font-size: 48pt;
+	color: white;
+	/*padding-top: 0.25em;*/
+}
+
+#trip-info h1, #trip-info h2 {
+	font-family: "Montserrat", "Arial", sans-serif;
+}
+
+#trip-info h1 {
+	font-weight: 600;
+}
+
+#trip-info h2 {
+	font-weight: 500;
+}
+
+#subtitle {
+	color: #fff;
+}
+
+h1 a, h1 a:hover {
+	color: white;
+	text-decoration: none;
+}
+
+#main {
+	max-width: 50em;
+	margin: 0 auto;
+	text-align: center;
+}
+
+/* fill screen */
+html, body {
+    margin: 0;
+    min-height: 100%;
+}
+
+body { 
+	background: linear-gradient( rgba(64, 64, 64, 0.4), rgba(64, 64, 64, 0.4)), url("../img/aircraft_wallpaper.jpg");
+    /*background-position: center;*/
+    background-repeat: no-repeat; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    /*padding: 15% 0;*/
+}
+
+div.block {
+	color: white;
+	padding: 3em;
+	margin: 2em;
+	border-radius: 1em;
+	background: linear-gradient( rgba(64, 64, 64, 0.4), rgba(64, 64, 64, 0.4));
+}
+
+div.block + div.block {
+	margin-top: 3em;
+}
+
+footer {
+	position: relative;
+	padding: 4em;
+	padding: 2em;
+	width: 100%;
+	text-align: center;
+	color: white;
+	font-size: 10pt;
+}
+
+footer p {
+	font-weight: 100;
+	text-transform: lowercase;
+	line-height: 0.5em;
+}
+
+footer a {
+	color: #FFD026;
+}
+
+footer a:hover {
+	color: #EFC016;	
+}
+
+#jetblue {
+	color: #7cdcff;
+}
+
+#logo {
+	padding-top: 0.5em;
+}
+
+#submit {
+	padding: 0.25em 0.75em;
+	color: white;
+	background-color: #41b2db;
+	border: 0px solid #41b2db;
+	border-radius: 0.5em;
+	transition: none 200ms ease-out;
+    transition-property: background-color;
+}
+
+#submit:hover {
+	background-color: #2192bb;
+}
+
+input[type=text] {
+	padding: 0.5em;
+	border-radius: 0.25em;
+	border: 1px solid white;
+}
+
+div#information {
+	margin-bottom: 10em;
+}
+
+.flight .ticket {
+	font-family: "Inconsolata", monospace;
+	margin: 0 auto;
+	min-height: 10em;
+	
+	color: black;
+	background-color: white;
+	border-radius: 1em;
+	font-size: 18pt;
+}
+
+.top-row {
+	font-family: "Josefin Sans", sans-serif;
+	background-color: #23599b;
+	color: white;
+	border: 1px solid #23599b;
+	border-radius: 1em;
+	text-transform: uppercase;
+	font-weight: 300;
+	font-size: 14pt;
+}
+
+.flight {
+	padding: 1.5em 1em;
+}
+
+p#jetblue {
+	font-family: "Josefin Sans", sans-serif;
+	color: #3382cc;
+	padding: 0.2em 0.6em;
+	padding-bottom: 0;
+	text-align: left;
+	font-size: 14pt;
+}
+
+#destination img {
+	margin: 1em;
+}
+
+#prompt p {
+	padding: 0.2em;
+}
+
+#not_found {
+	padding: 0.2em;
+	margin: 0.2em;
+	border-radius: 0.5em;
+	/*background-color: #f2a198;*/
+	color: #af2415;
+	width: 10em;
+	margin: 0 auto;
+	text-align: center;
+}
+
+#not_found + .block {
+	margin: 0.2em;
+}
+
+@media only screen and (max-width: 600px) {
+    div.block {
+        margin: 0;
+        border-radius: 0;
+        width: 100%;
+        padding: 1em;
+    }
+
+    div.block h1 {
+    	font-size: 36pt;
+    }
+}
